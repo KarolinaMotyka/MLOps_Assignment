@@ -6,7 +6,7 @@ This project is an **automated MLOps pipeline** that fetches new penguin data da
 
 ##  Repository Structure
 
-### `.github/workflows/`
+## `.github/workflows/`
 - **`predict.yml`** → GitHub Action workflow that runs **daily at 7:30 AM UTC** to fetch new data, make a prediction, and push the result.
 
 ###  `data/`

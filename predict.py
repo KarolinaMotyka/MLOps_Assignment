@@ -23,7 +23,40 @@ prediction = model.predict(new_data)
 # Decode prediction
 species = labelencoder.inverse_transform(prediction)
 
+html = f"""
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Penguin Prediction</title>
+    <style>
+        body {{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            background-color: #f0f8ff;
+        }}
+        .card {{
+            background-color: white;
+            padding: 20px;
+            margin: auto;
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }}
+        h1 {{
+            color: #333;
+        }}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🐧 Predicted Species:</h1>
+        <h2>{species[0]}</h2>
+    </div>
+</body>
+</html>
+"""
 
-# Save prediction to file
-with open("prediction_output/prediction.txt", "w") as f:
-    f.write(f"Predicted penguin: {species[0]}")
+with open("prediction_output/prediction.html", "w") as f:
+    f.write(html)

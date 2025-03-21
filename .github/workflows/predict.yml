@@ -25,11 +25,12 @@ jobs:
       - name: Run prediction script
         run: python predict.py
 
-      - name: Commit and push predictions
+      - name: Zapisz i wypchnij wynik
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add prediction_output/prediction.html
-          git commit -m " Daily prediction update"
-          git push
+          git add prediction_output/prediction.html || true
+          git diff --cached --quiet && echo "No changes to commit" || git commit -m " Daily prediction update"
+          git push || echo "Nothing to push"
+
 

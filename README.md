@@ -2,7 +2,7 @@
 
 ##  Overview
 
-This project is an **automated MLOps pipeline** that fetches new penguin data daily, predicts its species using a trained machine learning model, and updates the results everyday at 7.30.
+This project is an **automated MLOps pipeline** that fetches new penguin data daily, predicts its species using a trained machine learning model, and updates the results everyday at 7.30 and push it to **GitHub Pages**.
 
 ---
 

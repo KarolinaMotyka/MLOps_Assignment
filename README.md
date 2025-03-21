@@ -1,7 +1,9 @@
 # MLOps_Assignment: Penguin Species Prediction
 
 ##  Overview
+
 This project is an **automated MLOps pipeline** that fetches new penguin data daily, predicts its species using a trained machine learning model, and updates the results everyday at 7.30.
+
 ---
 
 ##  Repository Structure
@@ -9,7 +11,7 @@ This project is an **automated MLOps pipeline** that fetches new penguin data da
 ## `.github/workflows/`
 - **`predict.yml`** → GitHub Action workflow that runs **daily at 7:30 AM UTC** to fetch new data, make a prediction, and push the result.
 
-###  data/
+##  `data/`
 - **`penguins.db`** → SQLite database containing the original dataset of penguin species.
 
 ### `models/`

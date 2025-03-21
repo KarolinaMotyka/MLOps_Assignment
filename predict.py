@@ -58,5 +58,5 @@ html = f"""
 </html>
 """
 
-with open("prediction_output/prediction.html", "w") as f:
+with open("docs/prediction.html", "w") as f:
     f.write(html)

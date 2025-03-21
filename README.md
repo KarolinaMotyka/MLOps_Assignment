@@ -30,7 +30,7 @@ This project is an **automated MLOps pipeline** that fetches new penguin data da
   - Predicts the species
   - Saves the result as an HTML file 
 - **`train_model.ipynb`** → notebook used to train and save the model.
-- **`penguins.ipynb`** →  notebook for creating database 
+- **`penguins.ipynb`** →  notebook used to create database 
 
 ---
 

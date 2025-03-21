@@ -18,7 +18,7 @@ This project is an **automated MLOps pipeline** that fetches new penguin data da
 - **`penguin_logreg_model.pkl`** → Trained logistic regression model used for predictions.
 - **`label_encoder.pkl`** → Encoder that converts species names (`Adelie`, `Chinstrap`, `Gentoo`) into numerical labels.
 
-###  `prediction_output/`
+###  `docs/`
 - **`prediction.html`**  → Webpage that displays the latest predicted species, updated daily.
 
 

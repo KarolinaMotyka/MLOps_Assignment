@@ -40,7 +40,7 @@ This project is an **automated MLOps pipeline** that fetches new penguin data da
    - GitHub Actions runs `predict.py` every morning.
    - The script fetches **new penguin data** from the API.
    - The model predicts the species.
-   - The result is saved in `prediction_output/prediction.html`.
+   - The result is saved in `docs/prediction.html`.
    - GitHub Actions commits and pushes the updated file to GitHub Pages.
 3. **Viewing Predictions:** The prediction is displayed on **GitHub Pages**.
 
